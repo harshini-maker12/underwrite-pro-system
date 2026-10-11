@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgentPro - Agent Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🤝 AgentPro</h1>
+    <p>Insurance Agent Management System</p>
+  </header>
+
+  <nav>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#agents">Agents</a>
+    <a href="#register">Register Agent</a>
+    <a href="#commissions">Commissions</a>
+    <a href="#performance">Performance</a>
+    <a href="#reports">Reports</a>
+  </nav>
+
+  <main>
+    <section id="dashboard">
+      <h2>Dashboard</h2>
+      <div class="cards">
+        <article>
+          <h3>Total Agents</h3>
+          <p id="totalAgents">3</p>
+        </article>
+        <article>
+          <h3>Active Agents</h3>
+          <p id="activeAgents">2</p>
+        </article>
+        <article>
+          <h3>Total Commission</h3>
+          <p id="totalCommission">₹15,000</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="agents">
+      <h2>Agent Listing</h2>
+      <input id="search" placeholder="Search agents...">
+      <div id="agentList"></div>
+    </section>
+
+    <section id="register">
+      <h2>Register New Agent</h2>
+      <form id="agentForm">
+        <input id="name" placeholder="Agent Name" required>
+        <input id="email" type="email" placeholder="Email" required>
+        <input id="phone" type="tel" placeholder="Phone Number" required>
+        <button type="submit">Register Agent</button>
+      </form>
+      <p id="message"></p>
+    </section>
+
+    <section id="commissions">
+      <h2>Commission Management</h2>
+      <p>Track agent commission payments.</p>
+      <div id="commissionList"></div>
+    </section>
+
+    <section id="performance">
+      <h2>Performance Tracking</h2>
+      <p>Monitor policies sold and agent targets.</p>
+      <div id="performanceList"></div>
+    </section>
+
+    <section id="reports">
+      <h2>Reports</h2>
+      <button id="exportBtn">Export Agent Report (CSV)</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 AgentPro | Agent Management System</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
